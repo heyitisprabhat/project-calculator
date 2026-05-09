@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.calc-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 2px solid black;
+  border-radius: 16px;
+  width: 360px;
+  height: 580px;
+  padding: 16px;
+}
+
+.calc-display {
+  flex: 1;
+  border: solid 2px black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+  font-size: 32px;
+  flex: 1;
+  aspect-ratio: 1;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
