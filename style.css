@@ -6,6 +6,7 @@
 }
 
 .calc-body {
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -23,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: right;
-  padding-right: 16px;
+  padding-right: 14px;
 }
 
 .row {
@@ -32,10 +33,16 @@
   margin-bottom: 8px;
 }
 
-button {
+.btn {
   font-size: 32px;
   flex: 1;
   aspect-ratio: 1;
   border: 2px solid grey;
   border-radius: 4px;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
