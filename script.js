@@ -55,6 +55,27 @@ const operate = function (operator, num1, num2) {
   }
 };
 
+// buttons.forEach((button) => {
+//   button.addEventListener("mouseover", () => {
+//     button.style.backgroundColor = "rgba(128, 128, 128, 0.4)";
+//   });
+// });
+
+// buttons.forEach((button) => {
+//   button.addEventListener("mouseout", () => {
+//     button.style.backgroundColor = "";
+//   });
+// });
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+     button.style.backgroundColor = "rgba(128,128,128,0.4)";
+    setTimeout(() => {
+      button.style.backgroundColor = "";
+    }, 75);
+  });
+});
+
 symbolBtn.forEach((button) => {
   let key = button.textContent;
   button.addEventListener("click", () => {
@@ -104,6 +125,9 @@ backspaceBtn.addEventListener("click", () => {
 evaluateBtn.addEventListener("click", () => {
   const answer = operate(operator, num1, num2);
   calcDisplay.innerHTML = answer;
+  num1 = "";
+  num2 = "";
+  operator = "";
 });
 
 clearBtn.addEventListener("click", () => {
