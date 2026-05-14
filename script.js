@@ -55,13 +55,12 @@ const operate = function (operator, num1, num2) {
   }
 };
 
-
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-     button.style.backgroundColor = "rgba(128,128,128,0.4)";
+    button.style.backgroundColor = "rgba(128,128,128,0.4)";
     setTimeout(() => {
       button.style.backgroundColor = "";
-    }, 75);
+    }, 75); // The color reverts back after 75 ms
   });
 });
 
@@ -125,4 +124,3 @@ clearBtn.addEventListener("click", () => {
   operator = "";
   calcDisplay.innerHTML = "";
 });
-
