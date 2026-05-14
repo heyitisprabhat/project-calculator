@@ -75,13 +75,13 @@ numberBtn.forEach((button) => {
   let key = button.textContent;
   button.addEventListener("click", () => {
     if (operator === "") {
-      if (num1.length > 10) return;
+      if (num1.length > 8) return;
       if (key === "." && num1.includes(".")) return;
       num1 += key;
       calcDisplay.innerHTML = num1;
       console.log(num1);
     } else {
-      if (num2.length > 10) return;
+      if (num2.length > 8) return;
       if (key === "." && num2.includes(".")) return;
       num2 += key;
       calcDisplay.innerHTML = num2;
