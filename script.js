@@ -91,10 +91,11 @@ numberBtn.forEach((button) => {
 });
 
 backspaceBtn.addEventListener("click", () => {
-  if (num1 !== "") {
+  if (num1 !== "" && num2 === "") {
     num1 = num1.slice(0, -1);
     calcDisplay.innerHTML = num1;
-  } else {
+  }
+  if (num2 !== "") {
     num2 = num2.slice(0, -1);
     calcDisplay.innerHTML = num2;
   }
