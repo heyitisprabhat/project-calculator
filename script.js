@@ -35,8 +35,9 @@ const divide = function (num1, num2) {
 const percentage = function (num1, num2) {
   if (num2 === "0" || num2 === "00") {
     alert("Stop it, Bro. You will break the calculator");
-  }
-  return Math.trunc((parseFloat(num1) * parseFloat(num2)) / 100 / 0.01) * 0.01;
+    return parseFloat("");
+  } else {
+  return Math.trunc((parseFloat(num1) * parseFloat(num2)) / 100 / 0.01) * 0.01;}
 };
 
 const operate = function (operator, num1, num2) {
